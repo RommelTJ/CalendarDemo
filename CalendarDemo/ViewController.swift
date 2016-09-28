@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
         // Creating an event.
         let event = EKEvent(eventStore: store!)
-        event.title = "Rommel Test Event"
+        event.title = "English 151"
         event.startDate = Date(timeIntervalSinceNow: 40 * 60.0) //30 minutes from now = Now + 30 minutes * 60 seconds
         event.endDate = Date(timeIntervalSinceNow: 60 * 60.0) //One hour = 60 minutes * 60 seconds
         event.calendar = (store?.defaultCalendarForNewEvents)!
@@ -42,8 +42,8 @@ class ViewController: UIViewController {
         // TODO: Set recurrence rules.
         
         // Set the event location
-        let structuredLocation = EKStructuredLocation(title: "Apartments")
-        let location = CLLocation(latitude: 32.7602432, longitude: -117.1194348772299)
+        let structuredLocation = EKStructuredLocation(title: "Camino Hall")
+        let location = CLLocation(latitude: 32.7716572, longitude: -117.1927439)
         structuredLocation.geoLocation = location
         event.structuredLocation = structuredLocation
         
